@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loader {
+    display: flex;
+    height: 100px; 
+    width: 100px; 
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 30%;
+}
+
+.loader-circle {
+    position: absolute;
+    border: 100px solid transparent;
+    border-radius: 50%;
+    border-top-color: #8A2BE2; 
+    animation: spin 1.5s linear infinite;
+}
+
+.loader-circle-bg {
+    position: absolute;
+    border: 100px solid transparent;
+    border-radius: 50%;
+    border-top-color: rgba(138, 43, 226, 0.2); 
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
